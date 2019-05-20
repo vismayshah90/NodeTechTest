@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h3>Sign up</h3>
+    </header>
+     
+    <form id="registeration" method="POST" action="http://localhost:3000/signup">
+        <input type="text" id="FirstName" name="FirstName" required=true placeholder="First name">
+        <input type="text" id="LastName" name="LastName" required=true placeholder="Last name"><br/>
+        <input type="email" id="Email" name="Email" required=true placeholder="E-mail"> <br/>
+        <input type="password" id="Password" name="Password" required=true placeholder="Password" minlength="8"><br/>
+        <input type="number" id="PhoneNumber" name= "PhoneNumber" maxlength="10"> <br/>
+        <input type="checkbox" id="subscribe" name="subscribe"> 
+        <label for="subscribe"> Subscribe to our newsletter </label><br/>
+        <input type="submit" value="SIGN IN"> 
+    </form>
+
+    <footer>
+          <h6>By clicking Signup you agree to our terms and service</h6>
+    </footer>
+</body>
+</html>
